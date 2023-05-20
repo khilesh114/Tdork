@@ -1,0 +1,59 @@
+import time
+import os
+import sys
+os.system("bash banner.sh")
+t = 0
+sit = input("Enter domain name without (http/https://www) [testphp.vulnweb.com] :- ")
+def loop():
+    time.sleep(0.2)
+    input("Enter next doc :-")
+dork = {1: "goTo",
+             2 : "goback",
+             3 : "return",
+             4 : "return_to",
+             5 : "return_To",
+             6 : "returnUrl",
+             7 : "returnUri",
+             8 : "return_url",
+             9 : "return_path",
+             10 : "redir",
+             11 : "redirect",
+             12 : "redirect_url",
+             13 : "redirect_uri",
+             14 : "r_url",
+             15 : "rurl",
+             16 : "locationUri",
+             17 : "locationUrl",
+             18 : "next",
+             19 : "destintion",
+             20 : "checkout_url",
+             21 : "continue"}
+dict2 = {1 : (f"site:{sit} inurl:{dork[1]}"),
+              2 : (f"site:{sit} inurl:{dork[2]}"),
+              3 : (f"site:{sit} inurl:{dork[3]}"),
+              4 : (f"site:{sit} inurl:{dork[4]}"),
+              5 : (f"site:{sit} inurl:{dork[5]}"),
+              6 : (f"site:{sit} inurl:{dork[6]}"),
+              7 : (f"site:{sit} inurl:{dork[7]}"),
+              8 : (f"site:{sit} inurl:{dork[8]}"),
+              9 : (f"site:{sit} inurl:{dork[9]}"),
+              10 : (f"site:{sit} inurl:{dork[10]}"),
+              11 : (f"site:{sit} inurl:{dork[11]}"),
+              12 : (f"site:{sit} inurl:{dork[12]}"),
+              13 : (f"site:{sit} inurl:{dork[13]}"),
+              14 : (f"site:{sit} inurl:{dork[14]}"),
+              15 : (f"site:{sit} inurl:{dork[15]}"),
+              16 : (f"site:{sit} inurl:{dork[16]}"),
+              17 : (f"site:{sit} inurl:{dork[17]}"),
+              18 : (f"site:{sit} inurl:{dork[18]}"),
+              19 : (f"site:{sit} inurl:{dork[19]}"),
+              20 : (f"site:{sit} inurl:{dork[20]}"),
+              21 : (f"site:{sit} inurl:{dork[21]}"),}
+   
+for key,value in dict2.items():
+    while t<20:
+        for key,value in dict2.items():
+            time.sleep(0.1)
+            print(f"{value}")
+            t += 1
+            
